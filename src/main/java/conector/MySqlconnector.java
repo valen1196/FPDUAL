@@ -70,7 +70,7 @@ public class MySqlconnector {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         MySqlconnector connector = new MySqlconnector();
         Connection connection = connector.getMySQLConnection();
-        System.out.println(connection.getSchema());
+        System.out.println(connection.getCatalog());
     }
 
 
